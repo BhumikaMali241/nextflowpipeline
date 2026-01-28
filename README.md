@@ -1,4 +1,4 @@
-#Variant Calling Pipeline using Nextflow
+## Variant Calling Pipeline using Nextflow
 
 This repository contains a modular **single-end variant calling pipeline** implemented using **Nextflow**. The pipeline processes raw sequencing reads to identify **SNPs and small INDELs** by aligning reads to a reference genome and performing variant calling using standard bioinformatics tools.
 
@@ -204,12 +204,5 @@ nextflow run main.nf -resume
 
 ---
 
-If you want, I can also:
 
-* Make this **shorter / more academic**
-* Add a **workflow diagram**
-* Rewrite it to match **GitHub bioinformatics repo standards**
-* Or align it exactly with a **thesis / MSc project format**
-
-Just tell me 😄
 
