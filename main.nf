@@ -1,9 +1,6 @@
 
-params.fastq = "$projectDir/data/exom.fastq"
-params.ref = "$projectDir/reference/reference.fa"
-params.outdir = "$projectDir/results"
-params.adapter = "AGATCGGAAGAGC"
-include {MY_PIPELINE} from './workflow'
+
+include {MY_PIPELINE} from './workflows/workflow'
 
 workflow {
 
