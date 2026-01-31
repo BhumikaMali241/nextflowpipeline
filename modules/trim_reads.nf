@@ -10,7 +10,7 @@ process TRIM_READS{
 
     script:
     """
-    cutadapt -a AGATCGGAAGAGC -o sample_trimmed.fastq $fastq
+    cutadapt -a ${params.adapter} -o sample_trimmed.fastq $fastq
     """
 
 }
