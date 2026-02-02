@@ -12,7 +12,7 @@ process ALIGN_READS {
     script:
     """
 
-    bwa index ${ref}
-    bwa mem ${ref} ${trimmed} > sample_aligned.sam
+    ${params.bwa} index ${ref}
+    ${params.bwa} mem ${ref} ${trimmed} > sample_aligned.sam
     """
 }

@@ -11,7 +11,7 @@ process SORT_INDEX_BAM {
 
     script:
     """
-    samtools sort $bam -o sample_sorted.bam
-    samtools index sample_sorted.bam
+    ${params.samtools} sort $bam -o sample_sorted.bam
+    ${params.samtools} index sample_sorted.bam
     """
 }

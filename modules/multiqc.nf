@@ -1,6 +1,6 @@
 process MULTIQC {
      tag "multiqc"
-    publishDir "../results/multiqc",mode:'symlink'
+    publishDir "${params.outdir}/multiqc",mode:'symlink'
 
     input :
     path '*'
@@ -11,6 +11,6 @@ process MULTIQC {
     script:
     """
 
-    multiqc .
+    ${params.multiqc} .
     """
 }

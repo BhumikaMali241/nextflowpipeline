@@ -1,6 +1,6 @@
 process VARIANT_CALLING {
     tag "variant_calling"
-    publishDir "../results/variantcalling",mode:'symlink'
+    publishDir "${params.outdir}/variantcalling",mode:'symlink'
 
     input:
     path bam
@@ -13,7 +13,7 @@ process VARIANT_CALLING {
     script:
     """
 
-    bcftools mpileup -f ${ref} ${bam} | bcftools call -mv -o variants.vcf
+    ${params.bcftools} mpileup -f ${ref} ${bam} | bcftools call -mv -o variants.vcf
     """
 
 }

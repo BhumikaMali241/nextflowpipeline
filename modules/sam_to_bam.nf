@@ -1,6 +1,6 @@
 process SAM_TO_BAM {
     tag "sam_to_bam"
-    publishDir "../results/bam", mode: 'symlink'
+    publishDir "${params.outdir}/bam", mode: 'symlink'
 
     input:
     path sam
@@ -10,6 +10,6 @@ process SAM_TO_BAM {
 
     script:
     """
-    samtools view -Sb ${sam} > sample.bam
+    ${params.samtools} view -Sb ${sam} > sample.bam
     """
 }

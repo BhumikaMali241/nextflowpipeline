@@ -11,6 +11,6 @@ process FASTQC_TRIMMED {
     script:
     """
 
-    fastqc ${trimmed}
+    ${params.fastqc} ${trimmed}
     """ 
 }

@@ -1,0 +1,205 @@
+Feb-02 06:56:37.337 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf
+Feb-02 06:56:37.468 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.3
+Feb-02 06:56:37.536 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/bhumika_249/.nextflow/plugins; core-plugins: nf-amazon@3.4.3,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.4,nf-k8s@1.2.2,nf-tower@1.17.4,nf-wave@1.16.1
+Feb-02 06:56:37.600 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Feb-02 06:56:37.606 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Feb-02 06:56:37.614 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Feb-02 06:56:37.650 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Feb-02 06:56:37.941 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Feb-02 06:56:38.009 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/nextflow.config
+Feb-02 06:56:38.016 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/nextflow.config
+Feb-02 06:56:38.071 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Feb-02 06:56:38.867 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Feb-02 06:56:38.868 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Feb-02 06:56:38.905 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/bhumika_249/.nextflow/secrets/store.json
+Feb-02 06:56:38.913 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@806996] - activable => nextflow.secret.LocalSecretsProvider@806996
+Feb-02 06:56:38.939 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Feb-02 06:56:38.978 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [gloomy_marconi] DSL2 - revision: e4013f089d
+Feb-02 06:56:39.097 [main] DEBUG nextflow.Session - Session UUID: c7f7b1f9-0882-461f-af80-e0ce8b35f955
+Feb-02 06:56:39.098 [main] DEBUG nextflow.Session - Run name: gloomy_marconi
+Feb-02 06:56:39.100 [main] DEBUG nextflow.Session - Executor pool size: 8
+Feb-02 06:56:39.118 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Feb-02 06:56:39.133 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Feb-02 06:56:39.177 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.3 build 10983
+  Created: 22-01-2026 15:34 UTC 
+  System: Linux 6.6.87.2-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 17.0.14+1-b1367.22
+  Encoding: UTF-8 (UTF-8)
+  Process: 759@DESKTOP-51VL2LE [127.0.1.1]
+  CPUs: 8 - Mem: 7.6 GB (6.3 GB) - Swap: 2 GB (2 GB)
+Feb-02 06:56:39.244 [main] DEBUG nextflow.file.FileHelper - Unable to determine FS type (1): /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work
+
+Feb-02 06:56:39.246 [main] DEBUG nextflow.Session - Work-dir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work [null]
+Feb-02 06:56:39.248 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/bin
+Feb-02 06:56:39.264 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Feb-02 06:56:39.303 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Feb-02 06:56:39.311 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Feb-02 06:56:39.398 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Feb-02 06:56:39.420 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Feb-02 06:56:39.631 [main] DEBUG nextflow.Session - Session start
+Feb-02 06:56:39.842 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Feb-02 06:56:40.877 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:40.879 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:40.895 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Feb-02 06:56:40.906 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=7.6 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Feb-02 06:56:40.912 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Feb-02 06:56:40.958 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:FASTQC_RAW': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.038 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.039 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.042 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:TRIM_READS': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.054 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.056 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.058 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:FASTQC_TRIMMED': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.068 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.071 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.074 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:ALIGN_READS': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.084 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.086 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.089 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:SAM_TO_BAM': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.097 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.098 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.101 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:SORT_INDEX_BAM': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.113 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.114 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.117 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:VARIANT_CALLING': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.182 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Feb-02 06:56:41.183 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Feb-02 06:56:41.187 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MY_PIPELINE:MULTIQC': maxForks=0; fair=false; array=0
+Feb-02 06:56:41.193 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: FASTQC_RAW, MY_PIPELINE:VARIANT_CALLING, MY_PIPELINE:SAM_TO_BAM, MY_PIPELINE:TRIM_READS, MULTIQC, MY_PIPELINE:ALIGN_READS, MY_PIPELINE:SORT_INDEX_BAM, VARIANT_CALLING, SORT_INDEX_BAM, MY_PIPELINE:MULTIQC, MY_PIPELINE:FASTQC_RAW, TRIM_READS, MY_PIPELINE:FASTQC_TRIMMED, SAM_TO_BAM, FASTQC_TRIMMED, ALIGN_READS
+Feb-02 06:56:41.200 [main] DEBUG nextflow.Session - Igniting dataflow network (10)
+Feb-02 06:56:41.213 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:FASTQC_RAW
+Feb-02 06:56:41.215 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:TRIM_READS
+Feb-02 06:56:41.216 [PathVisitor-1] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/data/; pattern: *.fastq; options: [checkIfExists:true]
+Feb-02 06:56:41.216 [PathVisitor-2] DEBUG nextflow.file.PathVisitor - files for syntax: glob; folder: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/reference/; pattern: *.fa; options: [checkIfExists:true]
+Feb-02 06:56:41.218 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:FASTQC_TRIMMED
+Feb-02 06:56:41.219 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:ALIGN_READS
+Feb-02 06:56:41.221 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:SAM_TO_BAM
+Feb-02 06:56:41.222 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:SORT_INDEX_BAM
+Feb-02 06:56:41.224 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:VARIANT_CALLING
+Feb-02 06:56:41.225 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MY_PIPELINE:MULTIQC
+Feb-02 06:56:41.227 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_6800007ab559c44e: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/workflows/workflow.nf
+  Script_7a922f896740faec: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/sort_index_bam.nf
+  Script_b3715607fad3bfd6: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/trim_reads.nf
+  Script_3f8a5bd9f2c1ec4f: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/variant_calling.nf
+  Script_f8a24865647f1d52: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/fastqc_raw.nf
+  Script_3a9592033cfc6f7d: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/sam_to_bam.nf
+  Script_3edb3807f4d13f82: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/align_reads.nf
+  Script_f6da5b329ad8bc69: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/multiqc.nf
+  Script_d0b1625f827214d7: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/modules/fastqc_trimmed.nf
+  Script_0f61fe7e8d9cc0d4: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/main.nf
+Feb-02 06:56:41.228 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Feb-02 06:56:41.230 [main] DEBUG nextflow.Session - Session await
+Feb-02 06:56:41.583 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:56:41.588 [Task submitter] INFO  nextflow.Session - [54/f059c2] Submitted process > MY_PIPELINE:FASTQC_RAW (1)
+Feb-02 06:56:46.114 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: MY_PIPELINE:FASTQC_RAW (1); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/54/f059c281466d72508f348acafb06bc]
+Feb-02 06:56:46.117 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Feb-02 06:56:46.138 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:56:46.139 [Task submitter] INFO  nextflow.Session - [66/3bb032] Submitted process > MY_PIPELINE:TRIM_READS (trimming)
+Feb-02 06:56:47.363 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: MY_PIPELINE:TRIM_READS (trimming); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/66/3bb032b006d2e921eddc6f38dc73bd]
+Feb-02 06:56:47.435 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:56:47.436 [Task submitter] INFO  nextflow.Session - [8e/30efdf] Submitted process > MY_PIPELINE:FASTQC_TRIMMED (trimmed_qc)
+Feb-02 06:56:50.585 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: MY_PIPELINE:FASTQC_TRIMMED (trimmed_qc); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/8e/30efdffb86b606db5a415f54142e0c]
+Feb-02 06:56:50.604 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:56:50.606 [Task submitter] INFO  nextflow.Session - [a1/fc1e3f] Submitted process > MY_PIPELINE:ALIGN_READS (alignment)
+Feb-02 06:57:52.696 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: MY_PIPELINE:ALIGN_READS (alignment); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/a1/fc1e3fc205622ca23a260116a15815]
+Feb-02 06:57:52.714 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:52.715 [Task submitter] INFO  nextflow.Session - [44/f00fb9] Submitted process > MY_PIPELINE:MULTIQC (multiqc)
+Feb-02 06:57:52.815 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: MY_PIPELINE:MULTIQC (multiqc); status: COMPLETED; exit: 127; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/44/f00fb965f60048c3da76b20b1e3c30]
+Feb-02 06:57:52.830 [TaskFinalizer-5] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MY_PIPELINE:MULTIQC (multiqc); work-dir=/mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/44/f00fb965f60048c3da76b20b1e3c30
+  error [nextflow.exception.ProcessFailedException]: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127)
+Feb-02 06:57:52.831 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:52.833 [Task submitter] INFO  nextflow.Session - [e1/de34fd] Submitted process > MY_PIPELINE:SAM_TO_BAM (sam_to_bam)
+Feb-02 06:57:52.848 [TaskFinalizer-5] INFO  nextflow.processor.TaskProcessor - [44/f00fb9] NOTE: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127) -- Execution is retried (1)
+Feb-02 06:57:53.477 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: MY_PIPELINE:SAM_TO_BAM (sam_to_bam); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/e1/de34fdae8dbd9ec14f536e1b8731f7]
+Feb-02 06:57:53.488 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:53.489 [Task submitter] INFO  nextflow.Session - [e5/eb137a] Re-submitted process > MY_PIPELINE:MULTIQC (multiqc)
+Feb-02 06:57:53.540 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: MY_PIPELINE:MULTIQC (multiqc); status: COMPLETED; exit: 127; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/e5/eb137a920a504e5208b39aa154b0ee]
+Feb-02 06:57:53.544 [TaskFinalizer-7] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MY_PIPELINE:MULTIQC (multiqc); work-dir=/mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/e5/eb137a920a504e5208b39aa154b0ee
+  error [nextflow.exception.ProcessFailedException]: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127)
+Feb-02 06:57:53.545 [TaskFinalizer-7] INFO  nextflow.processor.TaskProcessor - [e5/eb137a] NOTE: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127) -- Execution is retried (2)
+Feb-02 06:57:53.551 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:53.551 [Task submitter] INFO  nextflow.Session - [45/214a58] Submitted process > MY_PIPELINE:SORT_INDEX_BAM (sort_index)
+Feb-02 06:57:54.106 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: MY_PIPELINE:SORT_INDEX_BAM (sort_index); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/45/214a5863df11e6a686e7fe3ea50db1]
+Feb-02 06:57:54.118 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:54.118 [Task submitter] INFO  nextflow.Session - [cc/6bff95] Re-submitted process > MY_PIPELINE:MULTIQC (multiqc)
+Feb-02 06:57:54.159 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: MY_PIPELINE:MULTIQC (multiqc); status: COMPLETED; exit: 127; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/cc/6bff954f2630bb71e053386b6c032b]
+Feb-02 06:57:54.163 [TaskFinalizer-9] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MY_PIPELINE:MULTIQC (multiqc); work-dir=/mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/cc/6bff954f2630bb71e053386b6c032b
+  error [nextflow.exception.ProcessFailedException]: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127)
+Feb-02 06:57:54.164 [TaskFinalizer-9] INFO  nextflow.processor.TaskProcessor - [cc/6bff95] NOTE: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127) -- Execution is retried (3)
+Feb-02 06:57:54.169 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:54.170 [Task submitter] INFO  nextflow.Session - [77/0da7ec] Submitted process > MY_PIPELINE:VARIANT_CALLING (variant_calling)
+Feb-02 06:57:55.554 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 10; name: MY_PIPELINE:VARIANT_CALLING (variant_calling); status: COMPLETED; exit: 0; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/77/0da7ecbe4043cb9b98e6c83eedaced]
+Feb-02 06:57:55.564 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Feb-02 06:57:55.565 [Task submitter] INFO  nextflow.Session - [8e/398574] Re-submitted process > MY_PIPELINE:MULTIQC (multiqc)
+Feb-02 06:57:55.608 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 11; name: MY_PIPELINE:MULTIQC (multiqc); status: COMPLETED; exit: 127; error: -; workDir: /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/8e/398574367e963ef3dbe7a4a29f98ed]
+Feb-02 06:57:55.611 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=MY_PIPELINE:MULTIQC (multiqc); work-dir=/mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/8e/398574367e963ef3dbe7a4a29f98ed
+  error [nextflow.exception.ProcessFailedException]: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127)
+Feb-02 06:57:55.630 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'MY_PIPELINE:MULTIQC (multiqc)'
+
+Caused by:
+  Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127)
+
+
+Command executed:
+
+  /home/bhumika_249/miniconda3/envs/bnf/bin/multiqc .
+
+Command exit status:
+  127
+
+Command output:
+  (empty)
+
+Command error:
+  .command.sh: line 2: /home/bhumika_249/miniconda3/envs/bnf/bin/multiqc: No such file or directory
+
+Work dir:
+  /mnt/d/MSC SEM II/NextFlow pipeline development/nextflowpipeline/work/8e/398574367e963ef3dbe7a4a29f98ed
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Feb-02 06:57:55.634 [main] DEBUG nextflow.Session - Session await > all processes finished
+Feb-02 06:57:55.637 [TaskFinalizer-1] DEBUG nextflow.Session - Session aborted -- Cause: Process `MY_PIPELINE:MULTIQC (multiqc)` terminated with an error exit status (127)
+Feb-02 06:57:55.663 [TaskFinalizer-1] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=4; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=3; abortedCount=0; succeedDuration=2m 26s; failedDuration=128ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=8 GB; ]
+Feb-02 06:57:55.703 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Feb-02 06:57:55.704 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Feb-02 06:57:55.706 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=4; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=3; abortedCount=0; succeedDuration=2m 26s; failedDuration=128ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=8 GB; ]
+Feb-02 06:57:55.705 [TaskFinalizer-1] DEBUG nextflow.Session - null
+java.lang.InterruptedException: null
+	at java.base/java.lang.Object.wait(Native Method)
+	at java.base/java.lang.Thread.join(Thread.java:1313)
+	at java.base/java.lang.Thread.join(Thread.java:1381)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:520)
+	at nextflow.Session$_notifyFlowComplete_lambda39.doCall(Session.groovy:1121)
+	at nextflow.Session.notifyEvent(Session.groovy:1151)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1121)
+	at nextflow.Session.shutdown0(Session.groovy:779)
+	at nextflow.Session.abort(Session.groovy:834)
+	at nextflow.Session.fault(Session.groovy:796)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1339)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1094)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Feb-02 06:57:55.862 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Feb-02 06:57:55.906 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye
