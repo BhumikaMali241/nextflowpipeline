@@ -1,6 +1,6 @@
 process FASTQC_TRIMMED {
     tag "trimmed_qc"
-    publishDir "${params.outdir}/fatsqc/trimmed",mode : 'symlink'
+    publishDir "${params.outdir}/fastqc/trimmed",mode : 'symlink'
 
     input : 
     path trimmed 
