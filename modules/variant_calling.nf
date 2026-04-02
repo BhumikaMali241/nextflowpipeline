@@ -1,6 +1,6 @@
 process VARIANT_CALLING {
     tag "variant_calling"
-    publishDir "${params.outdir}/variantcalling",mode:'symlink'
+    publishDir "${params.outdir}/variantcalling",mode:'copy'
 
     input:
     path bam
