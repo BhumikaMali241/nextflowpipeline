@@ -1,6 +1,6 @@
 process SAM_TO_BAM {
     tag "sam_to_bam"
-    publishDir "${params.outdir}/bam", mode: 'symlink'
+    publishDir "${params.outdir}/bam", mode: 'copy'
 
     input:
     path sam
