@@ -1,6 +1,6 @@
 process SORT_INDEX_BAM {
     tag "sort_index"
-    publishDir "${params.outdir}/bam", mode: 'symlink'
+    publishDir "${params.outdir}/bam", mode: 'copy'
 
     input:
     path bam
