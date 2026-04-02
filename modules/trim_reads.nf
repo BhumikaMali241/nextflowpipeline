@@ -1,6 +1,6 @@
 process TRIM_READS{
     tag "trimming"
-    publishDir "${params.outdir}/trimmed",mode: 'symlink'
+    publishDir "${params.outdir}/trimmed",mode: 'copy'
 
     input:
     path fastq
