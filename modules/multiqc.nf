@@ -1,6 +1,6 @@
 process MULTIQC {
      tag "multiqc"
-    publishDir "${params.outdir}/multiqc",mode:'symlink'
+    publishDir "${params.outdir}/multiqc",mode:'copy'
 
     input :
     path '*'
