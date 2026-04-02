@@ -1,6 +1,6 @@
 process ALIGN_READS {
     tag "alignment"
-    publishDir "${params.outdir}/alignment",mode:'symlink'
+    publishDir "${params.outdir}/alignment",mode:'copy'
 
     input: 
     path trimmed
