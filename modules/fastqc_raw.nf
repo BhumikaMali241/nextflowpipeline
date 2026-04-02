@@ -1,6 +1,6 @@
 process FASTQC_RAW {
    
-   publishDir "${params.outdir}/fastqc/raw",mode:'symlink'
+   publishDir "${params.outdir}/fastqc/raw",mode:'copy'
 
    input:
    path fastq
